@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Color Button</title>
+</head>
+<body>
+    <div id="configSelector">
+        <label id="configLabel" for="configSelect">Select Theme:</label>
+        <select id="configSelect">
+            <option value="configs/config1.json">Default Theme</option>
+            <option value="configs/config2.json">Dark Theme</option>
+            <option value="configs/config3.json">Colorful Theme</option>
+        </select>
+    </div>
+    
+    <div id="aiGenerator" style="margin: 20px 0; padding: 15px; border: 1px solid #ccc; border-radius: 5px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <h3 style="margin-top: 0;">Generate Theme with AI</h3>
+        <div style="margin-bottom: 10px;">
+            <label for="apiKeyInput" style="display: block; margin-bottom: 5px;">Gemini API Key:</label>
+            <input type="password" id="apiKeyInput" placeholder="Enter your Gemini API key" style="width: 100%; padding: 8px; box-sizing: border-box;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="promptInput" style="display: block; margin-bottom: 5px;">Theme Description:</label>
+            <textarea id="promptInput" placeholder="e.g., Create a modern blue theme with rounded buttons" style="width: 100%; padding: 8px; box-sizing: border-box; min-height: 60px;"></textarea>
+        </div>
+        <button id="generateButton" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Generate Theme</button>
+        <div id="generationStatus" style="margin-top: 10px; font-size: 14px;"></div>
+    </div>
+    
+    <h1 id="heading">Dynamic Color Button</h1>
+    <button id="colorButton">Click me to change color!</button>
+
+    <!-- Load modules -->
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/main.js"></script>
+    
+    <!-- Fallback for browsers that don't support ES modules -->
+    <script nomodule>
+        alert('Your browser does not support ES modules. Please use a modern browser.');
+    </script>
+</body>
+</html>

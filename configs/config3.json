@@ -1,0 +1,47 @@
+{
+  "name": "Colorful Theme",
+  "styles": {
+    "body": {
+      "fontFamily": "'Comic Sans MS', cursive, sans-serif",
+      "display": "flex",
+      "flexDirection": "column",
+      "alignItems": "center",
+      "justifyContent": "center",
+      "minHeight": "100vh",
+      "margin": "0",
+      "background": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    },
+    "heading": {
+      "marginBottom": "30px",
+      "color": "#ffffff",
+      "fontSize": "2.5em",
+      "textShadow": "2px 2px 4px rgba(0,0,0,0.3)"
+    },
+    "button": {
+      "padding": "20px 40px",
+      "fontSize": "20px",
+      "fontWeight": "bold",
+      "border": "none",
+      "borderRadius": "25px",
+      "cursor": "pointer",
+      "transition": "all 0.3s ease",
+      "boxShadow": "0 4px 15px rgba(0,0,0,0.2)",
+      "color": "#ffffff",
+      "colorProperty": "backgroundColor",
+      "initialColor": "#ff6b6b",
+      "colors": [
+        "#ff6b6b",
+        "#4ecdc4",
+        "#ffe66d",
+        "#ff8b94",
+        "#95e1d3",
+        "#f38181"
+      ]
+    },
+    "configSelector": {
+      "marginBottom": "20px",
+      "color": "#ffffff"
+    }
+  }
+}
+

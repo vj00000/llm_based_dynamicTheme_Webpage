@@ -1,0 +1,44 @@
+{
+  "name": "Default Theme",
+  "styles": {
+    "body": {
+      "fontFamily": "Arial, sans-serif",
+      "display": "flex",
+      "flexDirection": "column",
+      "alignItems": "center",
+      "justifyContent": "center",
+      "minHeight": "100vh",
+      "margin": "0",
+      "backgroundColor": "#f0f0f0"
+    },
+    "heading": {
+      "marginBottom": "30px",
+      "color": "#333333",
+      "fontSize": "2em"
+    },
+    "button": {
+      "padding": "15px 30px",
+      "fontSize": "18px",
+      "border": "none",
+      "borderRadius": "5px",
+      "cursor": "pointer",
+      "transition": "all 0.3s ease",
+      "color": "#ffffff",
+      "colorProperty": "backgroundColor",
+      "initialColor": "#4CAF50",
+      "colors": [
+        "#4CAF50",
+        "#2196F3",
+        "#FF9800",
+        "#F44336",
+        "#9C27B0",
+        "#00BCD4"
+      ]
+    },
+    "configSelector": {
+      "marginBottom": "20px",
+      "color": "#333333"
+    }
+  }
+}
+

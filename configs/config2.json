@@ -1,0 +1,46 @@
+{
+  "name": "Dark Theme",
+  "styles": {
+    "body": {
+      "fontFamily": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+      "display": "flex",
+      "flexDirection": "column",
+      "alignItems": "center",
+      "justifyContent": "center",
+      "minHeight": "100vh",
+      "margin": "0",
+      "backgroundColor": "#1a1a1a"
+    },
+    "heading": {
+      "marginBottom": "30px",
+      "color": "#ffffff",
+      "fontSize": "2em",
+      "textShadow": "0 2px 4px rgba(0,0,0,0.5)"
+    },
+    "button": {
+      "padding": "15px 30px",
+      "fontSize": "18px",
+      "border": "2px solid #ffffff",
+      "borderRadius": "8px",
+      "cursor": "pointer",
+      "transition": "all 0.3s ease",
+      "color": "#ffffff",
+      "fontWeight": "500",
+      "colorProperty": "backgroundColor",
+      "initialColor": "#6c5ce7",
+      "colors": [
+        "#6c5ce7",
+        "#a29bfe",
+        "#fd79a8",
+        "#fdcb6e",
+        "#00b894",
+        "#00cec9"
+      ]
+    },
+    "configSelector": {
+      "marginBottom": "20px",
+      "color": "#ffffff"
+    }
+  }
+}
+
