@@ -1,6 +1,7 @@
 // Gemini API service
 import { configSchema } from './schema.js';
 import { addConfig, updateConfigDropdown, loadConfig } from './configManager.js';
+import { setLastGeneratedConfig } from './githubService.js';
 
 let generatedConfigCounter = 0;
 
@@ -81,6 +82,9 @@ Generate the JSON now:`;
         generatedConfig.name = generatedConfig.name || `AI Generated Theme ${generatedConfigCounter}`;
         addConfig(configKey, generatedConfig);
 
+        // Store for potential GitHub push
+        setLastGeneratedConfig(configKey, generatedConfig);
+
         // Update dropdown
         updateConfigDropdown();
         
@@ -88,11 +92,17 @@ Generate the JSON now:`;
         document.getElementById('configSelect').value = configKey;
         loadConfig(configKey);
 
-        statusDiv.textContent = `✓ Theme "${generatedConfig.name}" generated successfully!`;
+        statusDiv.textContent = `✓ Theme "${generatedConfig.name}" generated successfully! You can push it to GitHub if you like it.`;
         statusDiv.style.color = '#4CAF50';
         
         // Clear the prompt input
         document.getElementById('promptInput').value = '';
+
+        // Show push button if GitHub is configured
+        const pushButton = document.getElementById('pushToGitHubButton');
+        if (pushButton) {
+            pushButton.style.display = 'inline-block';
+        }
 
         return generatedConfig;
 
