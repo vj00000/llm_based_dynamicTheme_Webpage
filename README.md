@@ -62,11 +62,6 @@ A modular web application with dynamic theming and AI-powered theme generation.
 3. Create a new API key
 4. Copy and paste it into the "Gemini API Key" field
 
-## Notes
-
-- **ES Modules**: This application uses ES6 modules, which require a web server to run (cannot be opened directly as a file)
-- **CORS**: The server includes CORS headers to allow module loading
-- **Configs**: Theme configurations are embedded in `js/configs.js` to avoid CORS issues with JSON files
 
 ## Browser Compatibility
 
