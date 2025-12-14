@@ -45,27 +45,6 @@ A modular web application with dynamic theming and AI-powered theme generation.
    http://localhost:8000/index.html
    ```
 
-### Option 2: Using Node.js http-server
-
-1. Install http-server globally (if not already installed):
-   ```bash
-   npm install -g http-server
-   ```
-2. Run the server:
-   ```bash
-   http-server -p 8000
-   ```
-3. Open your browser and navigate to:
-   ```
-   http://localhost:8000/index.html
-   ```
-
-### Option 3: Using PHP Built-in Server
-
-```bash
-php -S localhost:8000
-```
-
 ## Usage
 
 1. **Select a Theme**: Use the dropdown to switch between pre-built themes
